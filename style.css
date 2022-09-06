@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+:root {
+    --fonte-principal: 'Fira Sans', sans-serif;
+    --fonte-salmo: 'Tiro Bangla', serif;
+    --fonte-header: 'Abril Fatface', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+
+
+header {
+    display: flex;
+    min-height: 100px;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 70px;
+    background-image: linear-gradient(to left, #424242, #5ba4a800);
+    color: black
+}
+
+.logo-principal {
+    text-transform: uppercase;
+    font-family: var(--fonte-header);
+
+}
+
+.salmo {
+    font-family: var(--fonte-salmo);
+    padding-left: 450px;
+    font-style: italic;
+}
+
+
+
+.numero {
+    display: flex;
+    float: right;
+    padding-right: 10px;
+    font-weight: bold;
+
+
+}
+.numero a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    background-image: linear-gradient(to left, #424242, #5ba4a800);
+}
+
+
+div.nav {
+
+    font-family: var(--font-menu);
+    font-size: 1.2em;
+    font-weight: bold;
+    
+
+}
+
+.dp-menu {
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    
+    
+}
+
+.dp-menu ul {
+    background-color: transparent;
+}
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+
+}
+.dp-menu ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .3s;   
+}
+.dp-menu ul li a:hover {
+    background-color: lightblue;
+    transition-duration: .3s;  
+    opacity: 1;
+}
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    background-color: #5BA4A8;
+    opacity: 1;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+
+    
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a {
+    display: block;
+}
+
+div.container {
+    height: 100%;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #7a7a7a67;
+    color: black;
+    box-shadow: 6px 6px 13px 0 rgba(0, 0, 0, 0.164);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.descricao {
+    
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+}
+
+section p {
+    
+    background-color: #0000007c;
+    height: 70vh;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#parallax {
+    background-image: url(img-index/parallax-img.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.maindiv {
+  
+    display: flex;
+    gap: 600px;
+    padding-top: 50px;
+    max-width: 600px;
+
+}
+
+.btn {
+    width: 200px; 
+    height: 50px;
+    background-color: #5BA4A8;
+    border: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background .2s;
+    border-radius: 13px;
+}
+
+.btn:hover {
+    background-color: #2d5557;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
