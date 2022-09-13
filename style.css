@@ -7,6 +7,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 
+@media screen and (max-width: 569px){ 
+
+    .descricao-pc {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 568px) {
+    .descricao-mobile {
+        display: none;
+    }
+}
+
 :root {
     --fonte-principal: 'Fira Sans', sans-serif;
     --fonte-salmo: 'Tiro Bangla', serif;
@@ -141,15 +155,28 @@ main {
 }
 
 
-.descricao {
-    
+.descricao-pc {
+    min-width: 50vh;
     text-align: center;
     font-family: var(--fonte-principal);
     font-weight: bolder;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.568);
     background-attachment: fixed;
+    line-height: 2em;
+}
+
+.descricao-mobile {
+    min-width: 50vh;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    line-height: 2em;
 }
 
 section p {
@@ -167,15 +194,18 @@ section p {
 }
 
 .maindiv {
-  
     display: flex;
-    gap: 600px;
     padding-top: 50px;
-    max-width: 600px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
 
 }
 
-.btn {
+.btn-l {
+
     width: 200px; 
     height: 50px;
     background-color: #5BA4A8;
@@ -187,11 +217,24 @@ section p {
     border-radius: 13px;
 }
 
-.btn:hover {
+.btn-r {
+    display: inline;
+    width: 200px; 
+    height: 50px;
+    background-color: #5BA4A8;
+    border: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background .2s;
+    border-radius: 13px;
+}
+
+.btn-l:hover, .btn-r:hover {
     background-color: #2d5557;
 }
 
-.btn a {
+.btn-l a, .btn-r a {
     text-decoration: none;
     color: white;
 }
