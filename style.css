@@ -12,11 +12,17 @@
     .descricao-pc {
         display: none;
     }
+    div.salmo {
+        display: none;
+    }
     
 }
 
 @media screen and (min-width: 568px) {
     .descricao-mobile {
+        display: none;
+    }
+    .salmo {
         display: none;
     }
 }
@@ -38,10 +44,11 @@ body {
 
 
 header {
+    flex-direction: column;
     display: flex;
     min-height: 100px;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 70px;
     background-image: linear-gradient(to left, #424242, #5ba4a800);
     color: black
@@ -54,6 +61,7 @@ header {
 }
 
 .salmo {
+    display: block;
     font-family: var(--fonte-salmo);
     padding-left: 450px;
     font-style: italic;
@@ -199,14 +207,14 @@ section p {
     padding-bottom: 50px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 
 
 }
 
 .btn-l {
 
-    width: 200px; 
+    width: 170px; 
     height: 50px;
     background-color: #5BA4A8;
     border: none;
@@ -219,7 +227,7 @@ section p {
 
 .btn-r {
     display: inline;
-    width: 200px; 
+    width: 170px; 
     height: 50px;
     background-color: #5BA4A8;
     border: none;
