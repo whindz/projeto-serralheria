@@ -44,27 +44,20 @@ body {
 
 
 header {
-    flex-direction: column;
     display: flex;
     min-height: 100px;
     text-align: left;
     padding-top: 40px;
     padding-left: 70px;
     background-image: linear-gradient(to left, #424242, #5ba4a800);
-    color: black
+    color: black;
+    margin: auto;
 }
 
 .logo-principal {
     text-transform: uppercase;
     font-family: var(--fonte-header);
 
-}
-
-.salmo {
-    display: block;
-    font-family: var(--fonte-salmo);
-    padding-left: 450px;
-    font-style: italic;
 }
 
 
@@ -104,6 +97,11 @@ div.nav {
     display: inline-block;
     
     
+}
+
+div.sobrepor {
+    z-index: 3;
+    position: relative!important;
 }
 
 .dp-menu ul {
